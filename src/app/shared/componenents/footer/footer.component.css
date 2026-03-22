@@ -1,0 +1,277 @@
+:host{
+  display:block;
+}
+
+/* ==============================
+   FOOTER BASE
+============================== */
+
+.site-footer{
+  background:
+  radial-gradient(circle at 20% 30%, rgba(124,58,237,.25), transparent 40%),
+  radial-gradient(circle at 80% 70%, rgba(14,165,233,.25), transparent 40%),
+  linear-gradient(180deg,#020617,#020617,#0f172a);
+
+  color:#cbd5e1;
+
+  padding:80px 20px 30px;
+
+  border-top:1px solid rgba(255,255,255,.05);
+}
+
+/* ==============================
+   CONTAINER
+============================== */
+
+.footer-container{
+  max-width:1400px;
+  margin:auto;
+}
+
+/* ==============================
+   GRID
+============================== */
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1.2fr;
+  gap:40px;
+}
+
+/* ==============================
+   LOGO
+============================== */
+
+.footer-logo img{
+  height:48px;
+  margin-bottom:16px;
+}
+
+/* ==============================
+   COMPANY
+============================== */
+
+.company p{
+  font-size:14px;
+  line-height:1.7;
+  color:#94a3b8;
+}
+
+.footer-badge{
+  margin-top:14px;
+  font-size:13px;
+  padding:6px 14px;
+
+  background:rgba(124,58,237,.15);
+  border:1px solid rgba(124,58,237,.3);
+
+  border-radius:20px;
+
+  display:inline-block;
+}
+
+/* ==============================
+   TITLES
+============================== */
+
+.footer-col h4{
+  color:white;
+  margin-bottom:16px;
+  font-size:16px;
+}
+
+/* ==============================
+   LINKS
+============================== */
+
+.footer-col ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.footer-col li{
+  margin-bottom:10px;
+}
+
+.footer-col a{
+  text-decoration:none;
+  color:#94a3b8;
+  font-size:14px;
+
+  transition:.3s;
+}
+
+.footer-col a:hover{
+  color:white;
+}
+
+/* ==============================
+   CONTACT
+============================== */
+
+.contact p{
+  font-size:14px;
+  margin-bottom:10px;
+  color:#94a3b8;
+}
+
+/* ==============================
+   SOCIAL ICONS
+============================== */
+
+.socials{
+  display:flex;
+  gap:12px;
+  margin-top:14px;
+}
+
+.social{
+  width:38px;
+  height:38px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  color:white;
+
+  transition:.35s;
+}
+
+.social i{
+  font-size:16px;
+}
+
+/* ICON COLORS */
+
+.instagram{
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
+
+.linkedin{
+  background:#0A66C2;
+}
+
+.email{
+  background:linear-gradient(135deg,#7c3aed,#0ea5e9);
+}
+
+.social:hover{
+  transform:translateY(-4px) scale(1.08);
+  box-shadow:0 12px 30px rgba(0,0,0,.5);
+}
+
+/* ==============================
+   BOTTOM BAR
+============================== */
+
+.footer-bottom{
+  margin-top:50px;
+
+  padding-top:20px;
+
+  border-top:1px solid rgba(255,255,255,.06);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  font-size:13px;
+  color:#94a3b8;
+}
+
+.back-top{
+  background:linear-gradient(135deg,#7c3aed,#0ea5e9);
+  border:none;
+  color:white;
+
+  padding:8px 16px;
+
+  border-radius:20px;
+
+  cursor:pointer;
+
+  font-size:12px;
+
+  transition:.3s;
+}
+
+.back-top:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(124,58,237,.5);
+}
+
+/* ==============================
+   PRIVACY DROPDOWN
+============================== */
+
+.privacy-dropdown{
+  margin-top:30px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+/* LAPTOP */
+@media(max-width:1200px){
+
+.footer-grid{
+grid-template-columns:1.5fr 1fr 1fr;
+}
+
+.contact{
+grid-column:1/-1;
+}
+
+}
+
+/* TABLET */
+@media(max-width:900px){
+
+.footer-grid{
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-bottom{
+flex-direction:column;
+gap:14px;
+text-align:center;
+}
+
+.footer-logo img{
+height:42px;
+}
+
+}
+
+/* SMALL MOBILE */
+@media(max-width:380px){
+
+.site-footer{
+padding:60px 16px 30px;
+}
+
+.footer-col h4{
+font-size:15px;
+}
+
+.footer-col a,
+.contact p{
+font-size:13px;
+}
+
+}
